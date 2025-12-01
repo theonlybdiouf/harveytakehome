@@ -5,8 +5,10 @@
   )
 }}
 
+CREATE TABLE IF NOT EXISTS new_table_model AS 
+(
 SELECT
-title,
-COUNT(*)
+*
 FROM {{ ref('users') }}
-GROUP BY 1
+)
+
