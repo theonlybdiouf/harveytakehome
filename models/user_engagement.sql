@@ -5,6 +5,8 @@
   )
 }}
 
+DROP TABLE IF EXISTS new_table_model;
+
 CREATE TABLE IF NOT EXISTS new_table_model AS 
 (
 SELECT
