@@ -6,5 +6,7 @@
 }}
 
 SELECT
-COUNT(*) AS total_users
+title,
+COUNT(*)
 FROM {{ ref('users') }}
+GROUP BY 1

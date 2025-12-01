@@ -18,4 +18,8 @@ clean-targets: ["target"]
 
 # Optional: default model configs
 models:
-  +materialized: view   # you can change to table or incremental if needed
+  +materialized: table   # you can change to table or incremental if needed
+
+
+seeds:
+  +quote_columns: false
