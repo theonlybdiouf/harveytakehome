@@ -1,0 +1,21 @@
+name: 'takehome_project'
+version: '1.0.0'
+config-version: 2
+
+profile: 'default'   # must match your profiles.yml target name
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+analysis-paths: ["analysis"]
+docs-paths: ["docs"]
+asset-paths: ["assets"]
+
+clean-targets: ["target"]
+
+# Optional: default model configs
+models:
+  +materialized: view   # you can change to table or incremental if needed
