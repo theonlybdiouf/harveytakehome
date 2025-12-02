@@ -20,6 +20,7 @@ clean-targets: ["target"]
 models:
   +materialized: table   # you can change to table or incremental if needed
 
-
 seeds:
-  +quote_columns: false
+  +full_refresh: true
+  +quote_columns: false     # optional but recommended for Postgres
+
