@@ -1,16 +1,12 @@
 -- models/new_table_model.sql
 {{
   config(
-    materialized='table' 
+    materialized='table'
   )
 }}
 
-DROP TABLE IF EXISTS new_table_model;
-
-CREATE TABLE IF NOT EXISTS new_table_model AS 
-(
-SELECT
-*
-FROM {{ ref('users') }}
-)
-
+select
+  title,
+  count(*) as total_users
+from {{ ref('users') }}
+group by 1
