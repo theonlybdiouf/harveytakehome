@@ -88,5 +88,5 @@ I chose this model as this could help start analysis on usage gaps which can lea
 
 
 ## Analytics Questions 
-Can be found on the .ipynb notebook attached.
+Can be found on the Analytics Questions.ipynb notebook attached.
 
