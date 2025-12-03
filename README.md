@@ -89,6 +89,15 @@ I chose this model as this could help start analysis on usage gaps which can lea
 ## Model Outputs:
 I've included the model outputs within the model_outputs folder as csv's for the sake of demonstration.
 
+## Model Scalabilty and Performance Considerations
+
+For the raw data we can partition by event_date for firm,users, and events.
+Will allow for reprocessing and scalability, easier to target an area for backfill as well.
+
+From a table perspective we can partition/index on common SELECTS and WHERE conditions that end users will utilze.
+
+Finally we could leverage spark processing to scale even further the creation of tables and procesing of raw inputs as Harvey scales to million + users.
+
 ## Analytics Questions 
 Can be found on the Analytics Questions.ipynb notebook attached.
 
