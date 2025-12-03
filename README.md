@@ -32,10 +32,10 @@ As provided on the take home assignment, Harvey is a tool used daily by legal pr
 ## Overall Takehome Approach:
 I have ran this project on dbtLabs which links to my github via: https://github.com/theonlybdiouf/harveytakehome/
 
-In short -> Took the data split each data (users,firms,events) into csvs into dbt seed.
+In short -> The whole project was ran on dbtLabs(cloud) utilizing Supabase(postGRE) as a warehouse source ans target) -> the data split each data (users,firms,events) into csvs into dbt seed.
 For each respective tasks I have created the applicable models. All models were materialized as tables suitable for downstream analytics:
 
-It is important to note that we understand data can come at a daily level.
+I will assume the raw events comes a daily basis and configure jobs on dbtlabs to run this on daily basis. Please find model details below.
 
 ### User Engagement
   (/models/user_engagement.sql)
