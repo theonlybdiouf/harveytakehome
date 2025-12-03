@@ -86,6 +86,8 @@ This model captures event data summary at a daily level including columns:
 This model allows analysis on daily active user trends tieing with specific product usage.
 I chose this model as this could help start analysis on usage gaps which can lead to UX and product experience improvements to grow the number of unique users per product per day.
 
+## Model Outputs:
+I've included the model outputs within the model_outputs folder as csv's for the sake of demonstration.
 
 ## Analytics Questions 
 Can be found on the Analytics Questions.ipynb notebook attached.
